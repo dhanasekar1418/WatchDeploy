@@ -1,0 +1,93 @@
+/* General Styling for the Container */
+.overall {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Product Card Styling */
+.container1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.title1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding: 15px 20px 0;
+  margin: 0;
+}
+
+.category1 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.container1:hover .image1 {
+  transform: scale(1.05);
+}
+
+.price1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  padding: 10px 20px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.button1 {
+  display: block;
+  width: 90%;
+  margin: 15px auto 20px;
+  padding: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+}
